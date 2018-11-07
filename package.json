@@ -1,0 +1,24 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "showing application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markj06/bamazon.git"
+  },
+  "author": "markj06",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markj06/bamazon/issues"
+  },
+  "homepage": "https://github.com/markj06/bamazon#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "sequelize": "^4.41.0"
+  }
+}

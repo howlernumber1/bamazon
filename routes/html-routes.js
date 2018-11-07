@@ -14,6 +14,10 @@ module.exports = function(app) {
   // Below code handles when users 'visit' a page.
   // ---------------------------------------------------------------------------
 
+// Route to products page.
+  app.get('/product', function(req, res) {
+    res.sendFile(path.join(__dirname, '../public/product.html'));
+  });
 
   // If no matching route is found default to home
   app.get('*', function(req, res) {
