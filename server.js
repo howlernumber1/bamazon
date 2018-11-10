@@ -1,7 +1,7 @@
 // Imports express into our app and sets it up for use
 const express = require('express');
 const path = require('path');
-
+const db = require('./models')
 const app = express();
 
 // Defines a PORT for the server to listen for requests
@@ -21,8 +21,8 @@ require('./routes/html-routes.js')(app);
 
 // Starts our server on the predefined PORT
 
-// db.sequelize.sync().then(function() {
+db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
     console.log(`App listening on PORT ${PORT}`);
   });
-// });
+});

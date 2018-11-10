@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node ./seeds/seed-db.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/markj06/bamazon#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "sequelize": "^4.41.0"
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.41.1"
   }
 }

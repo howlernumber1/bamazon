@@ -14,28 +14,114 @@
 </head>
 
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="cartModalLabel">Shopping Cart</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Qty</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <div class="cartContent">
+                <!-- rendered from database -->
+                <tr scope="row">
+                  <td>e</td>
+                  <td>f</td>
+                  <td>g</td>
+                  <td>g</td>
+                </tr>
+              </div>
+              <div class="cartContentTotal">
+                <tr scope="row">
+                  <td>e</td>
+                  <td>b</td>
+                  <td>c</td>
+                  <td>c</td>
+                </tr>
+              </div>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Bamazon</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active float-left">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-secondary float-right" type="button" name="button" data-toggle="modal" data-target="#cartModal">Cart</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   <div class="container">
-    <h1 class="text-center">test</h1>
+    <h4 class="text-left">Items for Sale</h4>
     <div class="row">
       <div class="col">
-        <!-- rendered data from inventory database -->
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
-        <p>test</p>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Qty</th>
+              <th scope="col">Description</th>
+              <th scope="col">In Stock</th>
+              <th scope="col">Price</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <!-- rendered data from inventory database -->
+          <tbody class="productContent">
+            <tr>
+              <th scope="row"></th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

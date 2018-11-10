@@ -2,7 +2,7 @@
 // DEPENDENCIES
 // We need to include the path package to get the correct file path for our html
 // ===============================================================================
-// let productList = require('../data/productList.js');
+const db = require('../models');
 
 
 // ===============================================================================
@@ -15,7 +15,11 @@ module.exports = function(app) {
   // ---------------------------------------------------------------------------
 
   app.get('/api/products', function(req, res) {
-    res.json(productList)
+    db.Product.findAll({}).then(function(product) {
+      res.json(product)
+    }).catch(function(error) {
+      res.json({ error: error });
+    });
     // console.log(json.stringify(productList));
   });
 
