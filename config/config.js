@@ -9,13 +9,12 @@ module.exports = {
   },
   test: {
     username: "root",
-    password: null,
+    password: process.env.DB_PASS,
     database": "Bamazon",
     host: "127.0.0.1",
     dialect: "mysql"
   },
   production: {
-use_env_variable": "JAWSDB_URL",
-dialect: "mysql"
+use_env_variable: "JAWSDB_URL"
   }
 }
