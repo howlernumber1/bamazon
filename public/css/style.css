@@ -2,3 +2,7 @@ body {
   background: grey;
   height: 100%;
 }
+
+.form-control {
+  width: 50%;
+}

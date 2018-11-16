@@ -1,6 +1,6 @@
 $(function() {
 
-  // render function
+  // render function for initial data
   const render = function(inventory) {
     // log to make sure we have data from api
     console.log(inventory);
@@ -51,10 +51,22 @@ $(function() {
 
   }
 
+  // render function for modal
+  const renderModal = function (cart) {
+
+
+  }
+
 
   // add to cart function
-  const add = function() {
-    $('#cartContent').append('<tr><td>1</td></tr>')
+  const add = function(event) {
+    event.preventDefault();
+
+    //get quantity input
+    const qtyInput = function () {
+
+    }
+
     $('#cartModal').modal('toggle')
   }
 
