@@ -24,9 +24,9 @@ module.exports = function(app) {
   });
 
   app.post('/api/products', function(req, res) {
-    let reqArray = [];
-    reqArray.push(req.body);
-    console.log(reqArray);
+    // let reqArray = [];
+    // reqArray.push(req.body);
+    // console.log(reqArray);
     res.end();
   })
 };
