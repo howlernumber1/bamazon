@@ -1,6 +1,6 @@
-module exports = {
+module.exports = {
   development: {
-    username: "mj",
+    username: "root",
     password: process.env.DB_PASS,
     database: "db",
     host: "localhost",
@@ -8,7 +8,7 @@ module exports = {
     dialect: "mysql"
   },
   test: {
-    username: "mj",
+    username: "root",
     password: null,
     database": "Bamazon",
     host: "127.0.0.1",
